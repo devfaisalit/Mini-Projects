@@ -1,0 +1,12 @@
+#countrySelect,
+#postalcodefrom,
+#secondcountrySelect,
+#cityfrom,
+#postalcodeto,
+#cityto,
+#length,
+#weight{
+  width: 230px;
+  height: 36px;
+  border-radius: 5px;
+}

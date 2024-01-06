@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full flex flex-col justify-between items-center">
+<form action="/" method="post">
+        <div class="w-full flex justify-around  items-center">
+            <div class="space-y-6">
+                <div class="">
+                    <span class="text-black">Set voice Speed:</span>
+                    <input name="vspeed" type="range" min="0.5" max="2" step="0.1" value="1" id="rateSlider">
+              
+                </div>
+        <textarea name="text" id="textInput" class="mt-2 outline-none w-[1000px] h-[200px] text-2xl p-4 border-2 border-black rounded-lg" placeholder="Enter your text here to speech"></textarea>
+            </div>
+            <br />
+            <div>
+                <label>
+                </label>
+                </div>
+        </div>
+                    <button class="w-[110px] h-[40px] bg-green-500 rounded-md text-white text-xl" id="playButton">Play</button>
+        <a href="/export" class=" px-2 py-1 bg-green-700 rounded-md text-white text-xl">Download audio</a>
+</form>
+ </div>
+</body>
+</html>
